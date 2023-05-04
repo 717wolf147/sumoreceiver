@@ -38,7 +38,6 @@ basic.showString("R")
 basic.forever(function () {
     if (action == "A") {
         comment.comment("Insert A-Button Action Between These Comments")
-        wuKong.mecanumRun(wuKong.RunList.Front, 200)
         comment.comment("Insert A-Button Action Between These Comments")
         action = "Z"
     } else if (action == "B") {
@@ -51,6 +50,9 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "C") {
         comment.comment("Insert C-Button Action Between These Comments")
+        wuKong.setAllMotor(200, 200)
+        basic.pause(500)
+        wuKong.stopAllMotor()
         comment.comment("Insert C-Button Action Between These Comments")
         action = "Z"
     } else if (action == "D") {
