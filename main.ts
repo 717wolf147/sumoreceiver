@@ -42,6 +42,11 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "B") {
         comment.comment("Insert B-Button Action Between These Comments")
+        comment.comment("Dash")
+        wuKong.setAllMotor(300, 300)
+        basic.pause(500)
+        comment.comment("Stop")
+        wuKong.stopAllMotor()
         comment.comment("Insert B-Button Action Between These Comments")
         action = "Z"
     } else if (action == "AB") {
