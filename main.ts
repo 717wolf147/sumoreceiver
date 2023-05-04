@@ -50,9 +50,6 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "C") {
         comment.comment("Insert C-Button Action Between These Comments")
-        wuKong.setAllMotor(200, 200)
-        basic.pause(500)
-        wuKong.stopAllMotor()
         comment.comment("Insert C-Button Action Between These Comments")
         action = "Z"
     } else if (action == "D") {
