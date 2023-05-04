@@ -69,6 +69,11 @@ basic.forever(function () {
         action = "Z"
     } else if (action == "F") {
         comment.comment("Insert F-Button Action Between These Comments")
+        comment.comment("Backwards Dash")
+        wuKong.setAllMotor(-400, -400)
+        basic.pause(500)
+        comment.comment("Stop")
+        wuKong.stopAllMotor()
         comment.comment("Insert F-Button Action Between These Comments")
         action = "Z"
     } else {
